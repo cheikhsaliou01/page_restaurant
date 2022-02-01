@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Mon resto</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" >
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='app.js'></script>
+</head>
+<body>
+    <nav id="nav" class="nav">
+        <h1><span>F</span>oody</h1>
+        <ul>
+            <li id="label" onclick="window.toggleMenu()"><i class="fas fa-bars"></i></li>
+            <li>Accueil</li>
+            <a href="#recepies"><li>recettes</li></a>
+            <a href="#newsletter"><li>contact</li></a>  
+            <li>menu</li>
+            <button>s'inscrire</button>
+        </ul>
+    </nav>
+    <header >
+        <div class="left">
+            <h1>Mangez à votre faim, un resto de luxe sans luxe</h1>
+            <p class="description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat veritatis dolorem amet non quasi. Ipsum dolor sit amet consectetur adipisicing elit. Facere, omnis corporis.
+            </p>
+            <button>Commencer</button>
+        </div>
+        <div class="right">
+            <img src="imgs/header.png" alt="header photo">
+        </div>
+    </header>
+    <section class="presentation">
+        <div class="left">
+            <img src="imgs/plat.png" alt="plat de patte">
+        </div>
+        <div class="right">
+            <p class="mini-title">A propos de nous  </p>
+            <h1>Que faisons-nous de spécial dans nos restaurants ?</h1>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus debitis harum porro illum, nostrum, assumenda dolore repudiandae temporibus, qui minus a ab libero dolorem veritatis voluptatibus! Distinctio commodi aliquid earum!</p>
+        </div>
+    </section>
+    <section  id="recepies">
+        <p class="mini-title">Nos recettes</p>
+        <h2>Qui sont les plus populaires ?</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="imgs/pizza.png" alt="recepie">
+                <h3 >Pizza</h3>
+                <div class="ratting-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="price">15,90€</p>
+            </div>
+            <div class="card">
+                <img src="imgs/buger.png" alt="recepie">
+                <h3>Burger</h3>
+                <div class="ratting-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="price">12,90€</p>
+            </div>
+            <div class="card">
+                <img src="imgs/spaghetti.png" alt="recepie">
+                <h3>Spaghetti</h3>
+                <div class="ratting-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="price">11,50€</p>
+            </div>
+            <div class="card">
+                <img src="imgs/tacos.png" alt="recepie">
+                <h3>Tacos</h3>
+                <div class="ratting-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="price">9,40€</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <h1>Inscrivez-vous à notre NewsLetter</h1>
+        <form action="#">
+            <input type="text">
+            <button>S'abonner</button>
+        </form>
+    </section>
+    <footer>
+       <div class="colomn important">
+           <h3>Merci à vous !</h3>
+           <p>&copy; Copyright Foody, 2021 | Tous droits réservés</p>
+       </div>
+       <div class="colomn">
+           <h3>Nos serives</h3>
+           <p>Boutiques</p>
+           <p>Restaurant</p>
+           <p>Livraison</p>
+       </div>
+       <div class="colomn">
+           <h3>Recrutement</h3>
+           <p>recrutement@foody.fr</p>
+           <p>Postuler pour un emploi</p>
+           <p>Job Etudiant</p>
+       </div>
+            <div class="colomn">
+            <h3>Nos Locaux</h3>
+            <p>Paris</p>
+            <p>Marseille</p>
+            <p>Toulouse</p>
+       </div>
+    </footer>
+    <script>
+        window.toggleMenu = () => {
+            let x = document.getElementById('nav');
+            x.classList.toggle('responsive');
+        }
+    </script>
+</body>
+</html>
